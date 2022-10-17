@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf dist/",
     "start": "webpack serve --open --mode development",
     "build": "webpack build --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
