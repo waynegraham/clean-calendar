@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     var calendar = new Calendar(calendarEl, {
       plugins: [ interactionPlugin, bootstrap5Plugin, dayGridPlugin, googleCalendarPlugin, timeGridPlugin, listPlugin ],
+      themeSystem: 'bootstrap5',
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
@@ -32,12 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
           googleCalendarId: 'g2hval0pee3rmrv4f3n9hp9cok@group.calendar.google.com',
           className: 'dlf-community-events',
-          color: '#3a87ad'
+          // color: '#3a87ad'
+          color: '#236DA3;'
         },
         {
           googleCalendarId: '1nlqihbdhsca7r7npe93so66kk@group.calendar.google.com',
           className: 'dlf-zoom',
           color: '#EF6C00',
+          
         }
       ]
     });

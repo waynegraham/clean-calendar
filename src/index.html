@@ -11,8 +11,7 @@
     <meta property="og:url" content="http://digital-conferences-calendar.info/">
     <meta property="og:image" content="">
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" href="<%= require('./icon.png') %>">
 
     <link rel="stylesheet" href="./main.css">
 
@@ -33,25 +32,20 @@
               science, digital publishing &amp; more?
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <a href="mailto:info@diglib.org?subject=Community Calendar Request" type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Add Your Event!</a>
-          </div>
+              <a href="mailto:info@diglib.org?subject=Community Calendar Request" type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">
+                <i class="bi bi-calendar-event"></i> Add Your Event!
+              </a>
+              <button type="button" class="btn btn-outline-success btn-lg px-4"><i class="bi bi-calendar-range"></i> Subscribe</button>
+              <button type="button" class="btn btn-outline-info btn-lg px-4"><i class="bi bi-code"></i>  Embed</button>
+            </div>
           </div>
           <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <!-- <img class="rounded-lg-3" src="https://getbootstrap.com/docs/5.0/examples/heroes/bootstrap-docs.png" alt="" width="720"> -->
-            <img class="rounded-lg-3" src="assets/images/holding-hands.jpg" alt="" width="720">
+            <img class="rounded-lg-3" src="<%= require('./assets/images/holding-hands.jpg') %>" alt="" width="720">
           </div>
         </div>
       </div>
 
       <div class="container">
-        <p>
-          <a class="btn btn-success text-white" role="button"
-          href="http://www.google.com/calendar/ical/g2hval0pee3rmrv4f3n9hp9cok%40group.calendar.google.com/public/basic.ics"><i
-              class="far fa-calendar-plus"></i> Subscribe</a>
-          <a class="btn btn-info text-white" role="button"
-            href="https://calendar.google.com/calendar/b/1/embedhelper?src=g2hval0pee3rmrv4f3n9hp9cok%40group.calendar.google.com&ctz=America%2FNew_York"><i
-              class="fa fa-code"></i> Embed</a>
-        </p>
         <div id="calendar"></div>
       </div>
   </main>
