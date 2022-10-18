@@ -6,7 +6,10 @@ module.exports = {
   entry: './src/js/main.js',
   plugins: [
     new miniCssExtractPlugin(), 
-    new HtmlWebpackPlugin({ template: './src/index.html'} )
+    new HtmlWebpackPlugin({ 
+      template: './src/index.html',
+      favicon: './src/favicon.ico'
+    })
   ],
   resolve: {
     extensions: [ '.js' ]
@@ -28,7 +31,6 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'images/[name]-[hash][ext]'
-
         }
       },
       {
