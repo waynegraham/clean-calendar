@@ -8,7 +8,7 @@ Web interface wrapping the Digital Conferences Google Calendar built using es6 b
 * Install the dependencies (`npm install`)
 * Start the web server (`npm start`)
 * Edit
-* Build for production (`npm build`)
+* Build for production (`npm run build`)
 * Push (`git push`)
 
 ## Bootstrap
